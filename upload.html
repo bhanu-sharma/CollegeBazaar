@@ -1,0 +1,73 @@
+<!DOCTYPE=html>
+<html lang="en-US">
+<head></head>
+<body>
+<!--The data will be submitted to upload.php-->
+
+<form action="http://localhost/books_ait/upload.php" method="post"  enctype="multipart/form-data">
+<!-- Data of the submitter-->
+<div>
+	<h1>Your Credentials:</h1>
+	<br>
+	Name:
+	<input type="text" name="fullname" required>
+	<br>
+	Branch:
+	<select id="branch" name="branch" required>
+		<option value="ECE">ECE</option>
+		<option value="CSE">CSE</option>
+	</select>
+
+	Semester:
+	<select id="semester" name="semester" required>
+		<option value="01">01 </option>
+		<option value="02">02</option>
+		<option value="03">03 </option>
+		<option value="04">04 </option>
+		<option value="05">05</option>
+		<option value="06">06 </option>
+		<option value="07">07 </option>
+		<option value="08">08 </option>
+	</select>
+	<br>
+	Email:
+	<input type="email" name="email" required>
+	<br>
+	Contact:
+	<input type="number" name="contact" >
+	<br>
+</div>
+<!--Data about the item being submitted -->
+<div>
+	<h1>Tell us About the item</h1>
+	<br>
+	Item Name:
+	<input type="name" name="itemname" required>
+	<br>
+	For Branch:
+	<select id="branch" name="branch" required>
+		<option value="ECE">ECE</option>
+		<option value="CSE">CSE</option>
+	</select>
+	Semester: 	
+	<select id="book_semester" name="itemsemester" required>
+		<option value="01">01 </option>
+		<option value="02">02</option>
+		<option value="03">03 </option>
+		<option value="04">04 </option>
+		<option value="05">05</option>
+		<option value="06">06 </option>
+		<option value="07">07 </option>
+		<option value="08">08 </option>
+	</select>
+	<br>
+	<input type="file" name="itemimage" id="itemimage" >
+	<br>
+	Description:
+	<br>
+	<textarea name="description" rows="10" coloumn="5">
+	</textarea>
+	<br>
+</div>	
+<input type="submit" value="Submit" name="submit">
+</form>

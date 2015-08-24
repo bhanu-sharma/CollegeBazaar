@@ -1,0 +1,178 @@
+<!Doctype=html>
+<html>
+<head> </head>
+<body>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Home</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--  Free CSS Templates from www.templatemo.com -->
+<div id="templatemo_container">
+	<div id="templatemo_menu">
+    	<ul>
+            <li><a href="home.php" class="current">Home</a></li>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="subpage.html">Search</a></li>            
+           
+    	</ul>
+    </div> <!-- end of menu -->
+    
+    <div id="templatemo_header">
+    	<div id="templatemo_special_offers">
+        	<p>
+                <span>25%</span> discounts for
+        purchase over $80
+        	</p>
+			<a href="subpage.html" style="margin-left: 50px;">Read more...</a>
+        </div>
+        
+        
+        <div id="templatemo_new_books">
+        	<ul>
+                <li>Resnick Halliday</li>
+                <li>Boyelstead</li>
+                <li>mera naam champa</li>
+            </ul>
+            <a href="subpage.html" style="margin-left: 50px;">Read more...</a>
+        </div>
+    </div> <!-- end of header -->
+    <form>
+    <div id="templatemo_content">
+    	
+        <div id="templatemo_content_left">
+        	<div class="templatemo_content_left_section">
+            	<h1>Branch</h1>
+                <select id="branch" name="branch" required>
+				<option value="ECE">ECE</option>
+				<option value="CSE">CSE</option>
+			</select>
+            </div>
+			<div class="templatemo_content_left_section">
+            	<h1>Semester</h1>
+                <select id="book_semester" name="item_semester" required>
+				<option value="01">01 </option>
+				<option value="02">02</option>
+				<option value="03">03 </option>
+				<option value="04">04 </option>
+				<option value="05">05</option>
+				<option value="06">06 </option>
+				<option value="07">07 </option>
+				<option value="08">08 </option>
+			</select>
+            </div>
+            
+            <div class="templatemo_content_left_section">                
+                <input type="submit" value="Go">
+			</div>
+        </div> <!-- end of content left -->
+		</form>
+        
+        <div id="templatemo_content_right">
+        	<div class="templatemo_product_box">
+            	<h1>Photography  <span>(by Best Author)</span></h1>
+   	      <img src="images/templatemo_image_01.jpg" alt="image" />
+                <div class="product_info">
+                	<p>blah... blah...</p>
+                  <h3>Rs: 55</h3>
+                    <h2> Contact:</h2>
+					<p> yada yada yada </p>
+                </div>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            
+            <div class="cleaner_with_width">&nbsp;</div>
+            
+            <div class="templatemo_product_box">
+            	<h1>Cooking  <span>(by New Author)</span></h1>
+       	    <img src="images/templatemo_image_02.jpg" alt="image" />
+                <div class="product_info">
+                	<p>Blah... Blah...</p>
+                    <h3>Rs: 135</h3>
+				<h2>Contact:</h2>
+					<p> yada yada yada </p>
+                </div>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            
+            <div class="cleaner_with_height">&nbsp;</div>
+            
+            <div class="templatemo_product_box">
+            	<h1>Gardening <span>(by Famous Author)</span></h1>
+   	      <img src="images/templatemo_image_03.jpg" alt="image" />
+                <div class="product_info">
+                	<p>Blah... Blah...</p>
+                    <h3>Rs: 345</h3>
+				<h2>Contact:</h2>
+					<p> yada yada yada </p>
+                </div>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            
+            <div class="cleaner_with_width">&nbsp;</div>
+            
+            <div class="templatemo_product_box">
+            	<h1>Sushi Book  <span>(by Japanese Name)</span></h1>
+            	<img src="images/templatemo_image_04.jpg" alt="image" />
+                <div class="product_info">
+				<
+                	<p>Blah... Blah...</p>
+                    <h3>Rs: 758</h3>
+				<h2>Contact:</h2>
+					<p> yada yada yada </p>
+                </div>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            
+            <div class="cleaner_with_height">&nbsp;</div>
+		
+		
+        	<div class="templatemo_product_box">
+            	<h1>Coffee tables  <span>(by Best Author)</span></h1>
+   	      <img src="images/images.jpg" alt="image" height="150" width="100" />
+                <div class="product_info">
+                	<p>blah... blah...</p>
+                  <h3>Rs: 55</h3>
+                    <h2> Contact:</h2>
+					<p> yada yada yada </p>
+                </div>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            
+            <div class="cleaner_with_width">&nbsp;</div>
+          
+		<div class="templatemo_product_box">
+            	<h1>Hour Glass  <span>(by Doctor Who)</span></h1>
+   	      <img src="images/hour_glass.jpg" alt="image" height="150" width="100" />
+                <div class="product_info">
+                	<p>blah... blah...</p>
+                  <h3>Rs: 160</h3>
+                    <h2> Contact:</h2>
+					<p> yada yada yada </p>
+                </div>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            
+            <div class="cleaner_with_hieght">&nbsp;</div>
+            <a href="subpage.html"><img src="images/templatemo_ads.jpg" alt="ads" /></a>
+        </div> <!-- end of content right -->
+    
+    	<div class="cleaner_with_height">&nbsp;</div>
+    </div> <!-- end of content -->
+    
+    <div id="templatemo_footer">
+    
+	       <a href="subpage.html">Home</a> | <a href="subpage.html">Search</a> | <a href="subpage.html">Books</a> | <a href="#">New Releases</a> | <a href="#">FAQs</a> | <a href="#">Contact Us</a><br />
+        Copyright © 2024 <a href="#"><strong>Your Company Name</strong></a> 
+        <!-- Credit: www.templatemo.com -->	</div> 
+    <!-- end of footer -->
+<!--  Free CSS Template www.templatemo.com -->
+</div> <!-- end of container -->
+<!-- templatemo 086 book store -->
+<!-- 
+Book Store Template 
+http://www.templatemo.com/preview/templatemo_086_book_store 
+-->
+</html>

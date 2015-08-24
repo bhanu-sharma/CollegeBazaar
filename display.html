@@ -1,0 +1,91 @@
+<!Doctype=html>
+<html>
+<head> </head>
+<body>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Home</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!--  Free CSS Templates from www.templatemo.com -->
+<div id="templatemo_container">
+	<div id="templatemo_menu">
+    	<ul>
+            <li><a href="home.php" class="current">Home</a></li>
+            <li><a href="upload.html">Upload</a></li>
+            <li><a href="subpage.html">Search</a></li>            
+           
+    	</ul>
+    </div> <!-- end of menu -->
+    
+    <div id="templatemo_header">
+    	<div id="templatemo_special_offers">
+        	<p>
+                <span>25%</span> discounts for
+        purchase over $80
+        	</p>
+			<a href="subpage.html" style="margin-left: 50px;">Read more...</a>
+        </div>
+        
+        
+        <div id="templatemo_new_books">
+        	<ul>
+                <li>Resnick Halliday</li>
+                <li>Boyelstead</li>
+                <li>mera naam champa</li>
+            </ul>
+            <a href="subpage.html" style="margin-left: 50px;">Read more...</a>
+        </div>
+    </div> <!-- end of header -->
+    <form>
+    <div id="templatemo_content">
+    	
+        <div id="templatemo_content_left">
+        	<div class="templatemo_content_left_section">
+            	<h1>Branch</h1>
+                <select id="branch" name="branch" required>
+				<option value="ECE">ECE</option>
+				<option value="CSE">CSE</option>
+			</select>
+            </div>
+			<div class="templatemo_content_left_section">
+            	<h1>Semester</h1>
+                <select id="book_semester" name="item_semester" required>
+				<option value="01">01 </option>
+				<option value="02">02</option>
+				<option value="03">03 </option>
+				<option value="04">04 </option>
+				<option value="05">05</option>
+				<option value="06">06 </option>
+				<option value="07">07 </option>
+				<option value="08">08 </option>
+			</select>
+            </div>
+            
+            <div class="templatemo_content_left_section">                
+                <input type="submit" value="Go">
+			</div>
+        </div> <!-- end of content left -->
+		</form>
+		
+		</div>
+		<?php
+$servername = "localhost";
+$username = "root";
+$password = "bhanu@1995";
+# Create connection
+$conn = new mysqli($servername, $username, $password);
+# Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+	echo "bad conection";
+ }
+mysql_select_db("test") or die(mysql_error());		
+	$sql = "SELECT FROM books ";
+  $result = mysql_query("$sql");
+  $row = mysql_fetch_assoc($result);
+  ?>
+	</body>
+	</html>
