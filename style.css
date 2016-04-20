@@ -1,0 +1,38 @@
+div.transbox {
+    margin: 10px;
+    background-color: #FFFFFF;
+    width: 1330px;
+    height: 630px;
+    box-sizing: border-box;
+    opacity: 0.75;
+    filter: alpha(opacity=75); /* For IE8 and earlier */
+    background-size: 100%;
+  
+}
+
+div.transbox p {
+    margin: 5%;
+    width: 1310px;
+    height: 650px;
+    font-weight: bold;
+    color: #000000;
+    box-sizing: border-box;
+}
+/* Tablet Landscape */
+@media screen and (max-width: 1024px) {
+
+    #primary { width:67%; }
+
+    #secondary { width:30%; margin-left:3%;}  
+
+}
+
+/* Tabled Portrait */
+
+@media screen and (max-width: 768px) {
+
+    #primary { width:100%; }
+
+    #secondary { width:100%; margin:0; border:none; }
+
+}

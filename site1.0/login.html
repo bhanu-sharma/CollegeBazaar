@@ -1,0 +1,107 @@
+<!DOCTYPE=html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Books_AIT</title>
+
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Custom Stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<style>
+body {
+		 background-image: url("images/photo_bg.jpg");
+		 background-position: center center;
+  
+  /* Background image doesn't tile */
+		background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+		background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+		background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+		background-color: #464646;
+		/*font: 15px helvetica , sans-serif;*/
+		font-size: 100%;
+
+}
+p{
+font-size: 1em;
+}
+
+
+</style>
+</head>
+<body>
+	 <!--<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">BooksAIT</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>-->
+	<form action="login.php" method="post" name="login">
+		<div class="container">
+		<div class="top">
+			<h1 id="title" class="hidden"><span id="logo">Books <span>AIT</span></span></h1>
+		</div>
+		<div class="login-box animated fadeInUp">
+			<div class="box-header">
+				<h2>Log In</h2>
+			</div>
+			<label for="username">Email</label>
+			<br/>
+		<input type="email" name="username" placeholder="Email" required>
+		</br>
+		<label for="password">Password</label>
+			<br/>
+		<input type="password" name="password" placeholder="password" required>
+		</br></br>
+
+		<input type="submit" name="submit" value="Sign In" onclick="ValidateEmail(document.login.username)">
+		<a href="signup.html"><p>Sign Up</p></a>
+		</div>
+	</div>
+	</form>
+	<script src="emailvalidation.js"></script> 
+	<script>
+	$(document).ready(function () {
+    	$('#logo').addClass('animated fadeInDown');
+    	$("input:text:visible:first").focus();
+	});
+	$('#username').focus(function() {
+		$('label[for="username"]').addClass('selected');
+	});
+	$('#username').blur(function() {
+		$('label[for="username"]').removeClass('selected');
+	});
+	$('#password').focus(function() {
+		$('label[for="password"]').addClass('selected');
+	});
+	$('#password').blur(function() {
+		$('label[for="password"]').removeClass('selected');
+	});
+</script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,62 @@
+<!DOCTYPE=html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Books_AIT</title>
+
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Custom Stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+	<form action="signup.php" method="post" name="signup">
+		<div class="container">
+		<div class="top">
+			<h1 id="title" class="hidden"><span id="logo">Books <span>AIT</span></span></h1>
+		</div>
+		<div class="login-box animated fadeInUp">
+			<div class="box-header">
+				<h2>Sign Up</h2>
+			</div>
+			<label for="username">Email</label>
+			<br/>
+		<input type="email" name="username" placeholder="Email" required>
+		</br></br>
+		<label for="password">Password</label>
+			<br/>
+		<input type="password" name="password" placeholder="Password" required>
+		</br></br>
+		<input type="submit" name="submit" value="Sign Up" onclick="ValidateEmail(document.signup.username)">
+		<a href="login.html"><p>Log In</p></a>
+	</div>
+	</div>
+	</form>
+	<script src="emailvalidation.js"></script>
+	<script>
+	$(document).ready(function () {
+    	$('#logo').addClass('animated fadeInDown');
+    	$("input:text:visible:first").focus();
+	});
+	$('#username').focus(function() {
+		$('label[for="username"]').addClass('selected');
+	});
+	$('#username').blur(function() {
+		$('label[for="username"]').removeClass('selected');
+	});
+	$('#password').focus(function() {
+		$('label[for="password"]').addClass('selected');
+	});
+	$('#password').blur(function() {
+		$('label[for="password"]').removeClass('selected');
+	});
+</script>
+</body>
+</html>
+
+	
